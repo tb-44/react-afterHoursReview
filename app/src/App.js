@@ -16,7 +16,7 @@ class App extends Component {
     }
 
     this.handleClick = this.handleClick.bind(this)
-    this.addToCart = this.addToCart.bind(this) 
+    this.addToCart = this.addToCart.bind(this)
   }
 
   componentDidMount() {
@@ -38,7 +38,7 @@ class App extends Component {
     console.log(str)
     var total = Number(this.state.cartTotal) + Number(this.state.productPrice)
     this.setState({
-      cartTotal: total 
+      cartTotal: total
     })
   }
 
@@ -67,7 +67,7 @@ class App extends Component {
           productPrice={ this.state.productPrice }
           addToCart={ this.addToCart }/>
 
-          <div className='productContainer'> 
+          <div className='productContainer'>
             { products }
           </div>
 
